@@ -1,0 +1,138 @@
+@font-face {
+  font-family: 'Dancing Script';
+  src: url('DancingScript-Regular.ttf');
+}
+
+/* Comienza body */
+body{
+  font-family: 'Dancing Script', cursive;
+  background: black;
+  vertical-align: middle;
+}
+
+#Contenedor{
+  background: black;
+  display: inline-block;
+  display:block;
+  margin: 0px auto;
+}
+
+header{
+  background: #5b7989;
+  color: white;
+  text-shadow: #02010a 2px 2px;
+  border-radius: 10px 10px 0 0;
+  padding: 15px 0;
+  display: flex;
+  flex-flow: row wrap;
+}
+.menu a{
+  color: white;
+}
+/* Sección de galería*/
+#Galeria{
+  background-color: #d5c75f;
+  text-align: center;
+}
+
+.Linea1{
+  width: 100%;
+  display: flex;
+	flex-flow: row wrap;
+}
+
+.pic{
+  padding: 3% 0;
+}
+
+.pic img {
+  width: 80%;
+}
+
+.pic:nth-child(1) img{
+  filter: blur(10px);
+}
+
+.pic:nth-child(even) img{
+  filter: grayscale(100%);
+}
+
+.pic:nth-child(3) img{
+  filter: sepia(90%);
+}
+
+/* Sección footer*/
+footer{
+  background-color: #C6d5c5;
+  width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+  color: black;
+  border-radius: 0px 0px 10px 10px;
+  text-align: left;
+}
+
+footer div p{  font-size: 20px;  margin-left: 5%;}
+footer div h1{ margin-left: 5%;}
+
+.Pie3 img{
+  width: 8%;
+}
+
+
+@media all and (min-width:900px) {
+
+  #Contenedor{
+    max-width: 900px;
+  }
+
+  .Titulo{
+    width: 70%;
+    text-indent: 15px;
+  }
+
+  .menu{
+    text-align: center;
+    padding-top:25px;
+    width: 30%;
+    font-size: 18pt;
+  }
+
+  .pic {
+    width: 33%;
+  }
+
+  footer div{
+    width: 25%;
+  }
+}
+
+
+@media all and (max-width: 900px) {
+
+  #Contenedor{
+    width: 100%;
+  }
+
+  .Titulo{
+    text-align: center;
+    width: 100%;
+    text-indent: 15px;
+  }
+
+  .menu{
+    text-align: center;
+    padding-top:25px;
+    width: 100%;
+    font-size: 18pt;
+  }
+
+  .pic {
+    width: 100%;
+  }
+
+  footer div{
+    width: 100%;
+  }
+
+}
